@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei';
+}
+
+#container header{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #4b367c;
+}
+#container header h2{
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+#container ul{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+#container ul li{
+    display: inline-block;
+    width: 33.33333%;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+#container ul li .img{
+    position: relative;
+}
+#container ul li .img img{
+    width: 100%;
+}
+#container ul .online .img::after{
+    content: 'ONLINE';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    background-color: #62b21b;
+    color: #fff;
+    font-size: 12px;
+}
+#container ul .offline .img::after{
+    content: 'OFFLINE';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 75px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    background-color: #a9b79c;
+    color: #fff;
+    font-size: 12px;
+}
+#container ul li .mes{
+    height: 48px;
+    padding: 4px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+#container ul li .mes p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    margin: 0;
+}
+#container ul li .mes .name{
+    max-width: 70%;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    transition: color 0.1s ease-in-out 0s;
+}
+#container ul li .mes .type{
+    max-width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    top: 4px;
+    color: #ff7700;
+}
+#container ul li .mes .user{
+    color: #666;
+}
+#container ul li .mes .num{
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    color: #666;
+}
+#container ul li .mes .num i{
+    color: #ff5656;
+}
+#container ul li .view{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -33px;
+    margin-left: -25px;
+    opacity: 0;
+
+    transition: all 0.3s ease-in-out 0s;
+}
+#container ul li .view i{
+    color: #fff;
+    font-size: 50px;
+}
+#container ul li .link{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#container ul li:hover .mes .name{
+    color: #ff7700;
+}
+#container ul li:hover .view{
+    margin-top: -53px;
+    opacity: 1;
+}
+
+#container footer{
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    background-color: #19171c;
+}
